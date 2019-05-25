@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 });
 
 // Require Reviews routes
-require('./app/routes/review.routes.js')(app);
+require('./routes/review.routes.js')(app);
 
 // listen for requests
 app.listen(3001, () => {
