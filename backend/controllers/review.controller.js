@@ -92,7 +92,6 @@ exports.update = (req, res) => {
 };
 
 // Delete a review with the specified reviewId in the request
-// Delete a review with the specified reviewId in the request
 exports.delete = (req, res) => {
   Review.findByIdAndRemove(req.params.reviewId)
   .then(review => {
